@@ -1,0 +1,132 @@
+.portfolio-container {
+    margin-top: 200px;
+}
+.project1 {
+    width: 100%;
+    height: 800px;
+}
+.project2 {
+    height: 800px;
+}
+.project-left {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.project-right {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.project-info {
+    position: absolute;
+    top: 200px;
+    width: 800px;
+}
+.align-right {
+    text-align: right;
+}
+.project-title {
+    font-size: 100px;
+    text-shadow: -4px 4px var(--shadow);
+}
+.project-p {
+    font-size: 25px;
+    text-shadow: -3px 3px var(--shadow);
+    margin-bottom: 15px;
+}
+.portfolio-img {
+    width: 800px;
+    height: 700px;
+    border-radius: 30px;
+    box-shadow: -4px 4px var(--shadow);
+    background-color: darkgoldenrod;
+    border: 4px solid var(--shadow);
+    background-position: center;
+}
+.overlap {
+    position: absolute;
+    top: -80px
+}
+.project-link {
+    text-decoration: none;
+    -webkit-text-stroke: 1px var(--shadow);
+    color: var(--purp);
+}
+@media (max-width: 1650px) {
+    .portfolio-img {
+        width: 700px;
+        height: 600px;
+    }
+    .project-title {
+        font-size: 80px;
+    }
+    .project1 {
+        height: 700px;
+    }
+    .project2 {
+        height: 600px;
+    }
+    .project-info {
+        top: 150px;
+        width: 700px;
+    }
+}
+@media (max-width: 1450px) {
+    .portfolio-img {
+        width: 550px;
+        height: 450px;
+    }
+    .project-title {
+        font-size: 60px;
+    }
+    .project1 {
+        height: 550px;
+    }
+    .project2 {
+        height: 500px;
+    }
+    .project-info {
+        top: 100px;
+        width: 550px;
+    }
+}
+@media (max-width: 1115px) {
+    .project-left {
+        width: 100%;
+        height: initial
+    }
+    .project-right {
+        width: 100%;
+        height: initial;
+    }
+    .project-info {
+        position: initial;
+        top: initial;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .project1 {
+        height: initial;
+        margin-bottom: 50px;
+    }
+    .project2 {
+        height: initial;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .portfolio-img {
+        width: 450px;
+        height: 375px;
+    }
+    .portfolio-container {
+        padding: 0 10px;
+    }
+    .project-title {
+        font-size: 50px;
+    }
+}

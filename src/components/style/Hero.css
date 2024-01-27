@@ -1,0 +1,26 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+    flex: 1;
+}
+.hero-title {
+    font-size: 100px;
+    text-align: center;
+    text-shadow: -4px 4px var(--shadow);
+    letter-spacing: 2px;
+    max-width: 1040px;
+}
+@media (max-width: 990px) {
+    .hero-title {
+        font-size: 75px;
+    }
+}
+@media (max-width: 760px) {
+    .hero-title {
+        font-size: 55px;
+    }
+}

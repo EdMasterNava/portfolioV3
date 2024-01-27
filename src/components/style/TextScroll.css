@@ -1,0 +1,20 @@
+.text-scroll-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 100px;
+    text-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.text-scroll-center {
+    text-shadow: -4px 4px var(--shadow);
+}
+@media (max-width: 1400px) {
+    .text-scroll-container {
+        font-size: 75px;
+    }
+}
+@media (max-width: 1115px) {
+    .text-scroll-container {
+        font-size: 55px;
+    }
+}

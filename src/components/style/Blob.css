@@ -1,0 +1,15 @@
+.blob {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left: -250px;
+    top: -250px;
+    border-radius: 300px;
+    overflow: hidden;
+    z-index: -2;
+}
+.blob-color {
+    background-image: linear-gradient(to right, #660466 20%, #ffff00 65%, #a76c01 );
+    width: 100%;
+    height: 100%;
+}

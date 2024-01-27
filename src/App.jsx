@@ -18,6 +18,20 @@ function App() {
   const contactRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  
+  const breakpoint = 600;
+  const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
+  const blobLimit = isMobile ? 600 : 450
+  useEffect(() => {
+      function handleResize() {
+          setIsMobile(window.innerWidth < breakpoint);
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => {
+          window.removeEventListener('resize', handleResize);
+      };
+  }, []);
 
   useEffect(() => {
     if (heightRef.current) {
@@ -33,7 +47,7 @@ function App() {
   const handleMouseMove = (event) => {
     setPosition({
       x: event.pageX,
-      y: event.pageY > dimensions.height - 450 ? dimensions.height - 450 : event.pageY,
+      y: event.pageY > dimensions.height - blobLimit ? dimensions.height - blobLimit : event.pageY,
     });
   };
   const handleNavigation = (event) => {

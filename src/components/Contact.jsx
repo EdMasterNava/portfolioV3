@@ -10,13 +10,17 @@ function Contact({
 }) {
     const breakpoint = 1400;
     const bp2 = 1115;
+    const bp3 = 600;
     const [isMacbook, setIsMacbook] = useState(window.innerWidth < breakpoint);
     const [isSquare, setIsSquare] = useState(window.innerWidth < bp2);
+    
+    const [isMobile, setIsMobile] = useState(window.innerWidth < bp2);
 
     useEffect(() => {
         function handleResize() {
             setIsMacbook(window.innerWidth < breakpoint);
             setIsSquare(window.innerWidth < bp2);
+            setIsMobile(window.innerWidth < bp3);
         }
     
         window.addEventListener('resize', handleResize);
@@ -27,6 +31,9 @@ function Contact({
 
     const [bg, setBG] = useState(null);
     const handleBGChange = (event) => {
+        if(isMobile) {
+            return
+        }
         const id = event.target.id;
         if (id === 'linkedin'){
             setBG(linkedIn)

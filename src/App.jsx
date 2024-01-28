@@ -77,10 +77,9 @@ function App() {
         <Navbar handleNavigation={handleNavigation}/>
         <Hero />  
       </div>
-      
       <Portfolio portfolioRef={portfolioRef}/>
-      <AboutMe aboutRef={aboutRef}/>
       <Skills skillsRef={skillsRef}/>
+      <AboutMe aboutRef={aboutRef}/>
       <Contact contactRef={contactRef}/>
     </div>
     

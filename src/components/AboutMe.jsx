@@ -33,7 +33,7 @@ function AboutMe({
                     marginBottom: '100px'
                 }}
             >
-                About Me
+                AboutMe
             </TextScroll>
             <div className='about-section'>
                 <div className='about-card'>

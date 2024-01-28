@@ -5,7 +5,7 @@ import {
   Hero,
   Portfolio,
   Skills,
-  AboutMe,
+  // AboutMe,
   Contact
 } from './components';
 import './App.css';
@@ -80,7 +80,7 @@ function App() {
       
       <Portfolio portfolioRef={portfolioRef}/>
       <Skills skillsRef={skillsRef}/>
-      <AboutMe aboutRef={aboutRef}/>
+      {/* <AboutMe aboutRef={aboutRef}/> */}
       <Contact contactRef={contactRef}/>
     </div>
     

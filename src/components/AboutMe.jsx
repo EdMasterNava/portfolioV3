@@ -30,7 +30,7 @@ function AboutMe({
                 left={isSquare ? -1425 : isMacbook ? -1825 : -2350} 
                 right={500}
                 style={{
-                    margin: '0 0 100px'
+                    marginBottom: '100px'
                 }}
             >
                 About Me

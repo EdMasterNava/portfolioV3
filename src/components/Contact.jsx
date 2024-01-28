@@ -13,8 +13,7 @@ function Contact({
     const bp3 = 600;
     const [isMacbook, setIsMacbook] = useState(window.innerWidth < breakpoint);
     const [isSquare, setIsSquare] = useState(window.innerWidth < bp2);
-    
-    const [isMobile, setIsMobile] = useState(window.innerWidth < bp2);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < bp3);
 
     useEffect(() => {
         function handleResize() {
@@ -76,7 +75,7 @@ function Contact({
     return (
         <div className='contact-container' ref={contactRef}>
             <TextScroll 
-                left={isSquare ? -1175 : isMacbook ? -1825 : -2350} 
+                left={isSquare ? -1175 : isMacbook ? -1550 : -2000} 
                 right={500}
                 style={{
                     marginBottom: '150px'
